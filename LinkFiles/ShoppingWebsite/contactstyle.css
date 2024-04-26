@@ -1,0 +1,172 @@
+/* About */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+
+
+section#about{
+    background-image: url("./Images/banner.png");
+    background-position: center;
+    padding-block: 70px;
+    padding-inline: 10px;
+    height: 230px;
+}
+
+.addresses{
+    line-height: 1.8;
+}
+
+#contact-address{
+    padding-inline: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+
+#contact-address,#contact-form{
+    margin-top: 40px;
+    display: flex;
+   
+}
+#contact-form{
+    border: 1px solid  #e7e7e7;
+    box-shadow: 0px 0px 2px #e7e7e7;
+    padding: 50px;
+    margin-inline: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+#contact-form form{
+display: flex;
+flex-direction: column;
+width: 60%;
+line-height: 1.8;
+}
+#contact-form form label input{
+padding: 8px;
+border-radius: 1px;
+outline: none;
+border: 1px solid #e7e7e7;
+width: 100%;
+margin-block:5px;
+}
+textarea{
+    border-color: #e7e7e7;
+    font-family:"Merriweather", serif;
+    outline: none;
+    padding: 10px;
+}
+#contact-form form input[type=button]{
+background-color: #088178;
+color: whitesmoke;
+border: none;
+width: 100px;
+padding-block: 10px;
+margin-top: 10px;
+border-radius: 2px;
+cursor: pointer;
+}
+
+.author-details{
+    display: flex;
+    margin-block: 10px;
+}
+.author-details img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+#about p span{
+text-transform: uppercase;
+}
+
+.go-through{
+    font-family: sans-serif;
+
+}
+.go-through li i{
+
+padding-right: 8px;
+
+
+}
+.go-through li{
+display: flex;
+align-items: center;
+
+}
+.addresses p.marked{
+    text-transform: uppercase;
+}
+
+.addresses .medium-black{
+    font-weight: bold;
+  
+}
+
+.google-map{
+    width: 90%;
+}
+.google-map iframe{
+
+width: 100%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:960px) {
+
+    #contact-address{ 
+      flex-direction: column;
+    }
+    .google-map{
+        margin-top: 20px;
+    }
+
+
+}
+@media (max-width:820px) {
+#contact-form{   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#contact-form form{
+    width: 80%;
+     }
+
+.author{
+display: flex;
+flex-direction: column;
+
+
+
+    margin-top: 20px;
+}
+}
+
+@media (max-width:670px) {
+    #contact-form{
+        padding: 0;
+    }
+    #contact-address{
+        padding-inline: 10px;
+    }
+
+    #contact-form form{
+       width: 95%;
+        }
+    }

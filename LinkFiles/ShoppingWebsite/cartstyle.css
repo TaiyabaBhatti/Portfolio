@@ -1,0 +1,176 @@
+section#about{
+    background-image: url("./Images/banner.png");
+}
+
+
+/* .headings p.header{
+font-weight:700;
+color: black;
+font-size: 1.2rem;
+} */
+
+#cart-list{
+    margin-top: 40px;
+    padding-inline: 50px;
+    overflow-x: auto;
+   
+}
+
+
+.cart-table tbody tr td.image img{
+    width: 60px;
+    height: 60px;
+}
+
+.cart-table{
+    text-align: center;
+    margin: auto;
+}
+
+.cart-table td{
+    padding-inline: 30px;
+    padding-block: 15px;
+}
+
+.quantity input{
+    width: 50%;
+    padding-block: 5px;
+    outline: none;
+}
+
+
+
+.cart-table thead tr td{
+    text-transform: uppercase;
+         font-weight: 900;
+}
+
+.cart-table thead tr {
+    border: 1px solid gray;
+    border-left: none;
+    border-right: none;
+}
+
+.cart-table {
+
+width: 100%;
+border-collapse: collapse;
+table-layout: fixed;
+white-space: nowrap;
+}
+.cart-table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+.cart-table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+.cart-table td:nth-child(3){
+    width: 200px;
+    text-align: center;
+}
+.cart-table td:nth-child(4),.cart-table td:nth-child(5)
+,
+.cart-table td:nth-child(6){
+    width: 210px;
+    text-align: center;
+}
+
+  
+
+
+
+
+
+
+
+
+section#submit-cart{
+   margin-top: 50px;
+    }
+    .low-text{
+    font-size: 1.1rem;
+    color:black;
+    font-weight: bolder;
+}
+    
+    #sign-up input{
+        outline: none;
+        border: 1px solid #e7e7e7;
+        padding-block: 6.4px;
+        margin-right: 2px;
+        padding-inline: 10px;
+    }
+    button{
+         padding: 7px 10px ;
+        border: none;
+        background-color:  #0a8371;
+        color: whitesmoke;
+    }
+    
+    @media (max-width:760px) {
+    
+        #sign-up{
+            margin-top: 10px;
+       }
+    }
+
+    .low-text{
+margin-bottom: 10px;
+font-weight: 900;
+
+    }
+    #sign-up{
+        width: 30%;
+    }
+
+    .subtotal, .price{
+        font-family: sans-serif;
+    }
+
+    #totals{
+        margin-top: 20px;
+        border: 1px solid #e7e7e7;
+        padding: 15px;
+        width: 40%;
+       
+    }
+
+
+    #submit-cart{
+        display: flex;
+        justify-content: center;
+    }
+
+.cart-total{
+   
+    width: 100%;
+border-collapse: collapse;
+table-layout: fixed;
+white-space: nowrap;
+
+}
+
+.cart-total tbody tr:nth-child(1),.cart-total tbody tr:nth-child(2),.cart-total tbody tr:nth-child(3){
+    border: 1px solid #e7e7e7;
+    padding: 5px;
+}
+.cart-total tbody tr td{
+    padding: 5px;
+}
+
+@media  (max-width:860px) {
+    #submit-cart{
+      flex-direction: column;
+      align-items: center;
+padding-inline: 20px;
+    }
+
+
+
+    #sign-up,   #totals{
+        width: 100%;
+    }
+
+}
