@@ -1,0 +1,72 @@
+body{
+    margin:0;
+    
+    
+}
+
+#info {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px;
+    min-width: 280px;
+    border-bottom: 5px solid white;
+    background-color: rgb(17, 79, 138);
+   
+    z-index: 9999;
+}
+/*using pseudo element in case to fixed the selected element*/
+
+#info::before{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+   
+    z-index: 9999;
+}
+
+*{
+    box-sizing: border-box;
+}
+#Gallery img{
+    width: 100%;
+    min-width: 280px;
+   max-width: 400px;
+   
+    height: 350px;
+    object-fit: cover;
+    border-radius: 2%;
+    background-attachment: fixed;
+}
+#Gallery{
+   display: flex;
+   flex-wrap: wrap;
+
+   /* set ratios of the pictures it may clip the photo for adjustment*/
+
+   object-fit: cover;
+
+   justify-content: center;
+   gap:15px;
+   margin: 145px auto 0 auto ;
+   padding:8px 10px;
+}
+
+/* ::pseudo selector here its work as to push the last row and adjust according to the style */
+
+#Gallery::after{
+    content: "";
+    width: 400px;
+}
+#description{
+    color: white;
+    padding: 1px 10px;
+    min-width: 280px;
+   
+  background-color: rgb(17, 79, 138);
+}

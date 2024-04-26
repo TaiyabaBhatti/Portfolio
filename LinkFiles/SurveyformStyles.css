@@ -1,0 +1,89 @@
+ body{
+   
+    background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color:white;
+    line-height: 1.6;
+    font-family: serif;
+
+} 
+.block{
+    display: block;
+}
+.content{
+    margin-bottom: 1rem;
+}
+#heading{
+  
+   
+    text-align: center;
+}
+#title{
+   line-height: 1.2;
+   margin:0 0 8px 0;
+    display: inline-block;
+    font-size: 30px;
+  
+    
+}
+#description{
+    font-weight: 100;
+    text-shadow: 1px 1px  1px rgba(106, 106, 112, 0.7);
+    display: inline-block;
+    margin: 0 0 8px 0;
+    color:rgba(217, 214, 223, 0.7);
+    font-style: italic;
+}
+#survey-form{
+    
+  background-color: rgba(30, 21, 82, 0.79);
+  width: fit-content;
+  padding: 2rem;
+   margin: auto;
+}
+input{
+   
+
+
+}
+
+#button{
+    background-color: rgb(17, 126, 102);
+    color: white;
+    width: 100%;
+    height: 2rem;
+    border: 1px solid rgba(15, 5, 70, 0.79);
+    border-radius: 2px;
+
+}
+#button:hover{
+    box-shadow: 1px 1px 1px 1px  rgb(157, 209, 198);
+    outline: 0;
+    border-color: rgb(17, 126, 102) ;
+}
+#container{
+
+    width: 100%; 
+}
+.box{
+
+width: 100%;
+height: 1.67rem;
+border: 1px solid  rgba(15, 5, 70, 0.79);
+border-radius: 0.2rem;
+}
+input{
+    padding-left: 10px;
+
+}
+input:focus{
+    outline: 0;
+    box-shadow: 1px 1px 1px 1px rgba(15, 5, 70, 0.79);
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="SurveyformStyles.css">
+</head>
+<body>
+  <div id="container">
+    <header id="heading">
+<h1 id="title">freeCodeCamp Survey Form</h1><br>
+<p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <form id="survey-form">
+     <div class="content">
+       <label class="block info" for="name" >Name: </label>
+       <input type="text" placeholder="Enter your name" id="name" class="box" required>
+     </div>   
+     <div class="content">
+        <label class="block info" for="email">Email Address: </label>
+        <input type="email" placeholder="Enter your email" id="email" class="box" required>
+      </div>  
+      <div class="content">
+        <label class="block info" for="age">Age(optional): </label>
+        <input type="number" min="15" max="40" placeholder="Enter your age" id="age" class="box">
+      </div>  
+      <div class="content">
+        <label class="block info">Which option best describes your current role?</label>
+      <select class="box">
+      <option>Select current role</option>
+      <option>Student</option>
+      <option>Proficient</option>
+      <option>Full Stack Developer</option>
+      </select>
+      </div>
+      <div class="content">
+        <label class="block">Would you recommend freeCodeCamp to a friend?</label>
+        <label class="block"><input type="radio" name="recommend" value="Definietly">  Definietly</label>
+        <label class="block"><input type="radio" name="recommend" value="Maybe">  Maybe</label>
+        <label class="block"><input type="radio" name="recommend" value="Notsure">  Not sure</label>
+      </div>
+      <div class="content">
+<label class="block">What would you like to see improved? (Check all that apply).</label>
+<label class="block"><input type="checkbox" >   Front-end Projects</label>
+<label class="block"><input type="checkbox" >   Back-end Projects</label>
+<label class="block"><input type="checkbox" >  Data Visualization</label>
+<label class="block"><input type="checkbox" >   Gitter help rooms</label>
+<label class="block"><input type="checkbox" >   Challenges</label>
+<label class="block"><input type="checkbox" >   Open Source Community</label>
+      </div>
+<div class="content">
+  <label class="block">Any comments or suggestions?</label>
+  <textarea cols="60" rows="6"></textarea>
+</div>
+<div >
+<input type="submit" value="Submit" id="button">
+</div>
+
+
+    </form>
+  
+    
+
+  </div>
+
+
+
+
+
+
+</body>
+</html>
