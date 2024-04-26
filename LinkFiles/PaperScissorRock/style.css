@@ -1,0 +1,103 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heading{
+    padding-block: 5px;
+    text-align: center;
+    background-color: #1a1d45;
+    color: white;
+    margin-bottom: 40px;
+    font-family: sans-serif;
+}
+
+
+
+
+
+
+
+#options{
+display: flex;
+justify-content: space-between;
+    width: calc(100px * 3 + 50px);
+}
+
+
+
+
+#options .opt{
+
+width: 100px;
+height: 100px;
+object-fit: contain;
+border-radius: 50%;
+
+
+
+}
+
+#options img.opt:nth-child(1){
+    box-shadow:inset 0px 0px 10px purple;
+}
+
+#options img.opt:nth-child(1):hover{
+    box-shadow:0px 0px 10px purple ,inset 0px 0px 10px purple;
+}
+#options img.opt:nth-child(2){
+    box-shadow:inset 0px 0px 10px  #0095ff;
+}
+
+#options img.opt:nth-child(2):hover{
+    box-shadow:0px 0px 10px  #0095ff ,inset 0px 0px 10px  #0095ff;
+}
+#options img.opt:nth-child(3){
+    box-shadow:inset 0px 0px 10px #ffc800;
+}
+
+#options img.opt:nth-child(3):hover{
+    box-shadow:0px 0px 10px #ffc800 ,inset 0px 0px 10px #ffc800;
+}
+
+
+#activity{
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 70vw;
+margin: auto;
+}
+
+#activity div{
+margin-bottom: 50px;
+}
+
+#move-btn{
+    padding: 8px 10px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: #1a1d45;
+    color: white;
+    font-size: 1.1rem;
+  
+}
+
+#score-section div{
+    display: inline-block;
+    margin-inline: 20px;
+    text-align: center;
+}
+
+.score{
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+.title{
+    font-weight: 500;
+}
