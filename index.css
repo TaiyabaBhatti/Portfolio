@@ -47,8 +47,9 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background-image: url('./IMAGES/Frame.png');
+    height: 100vh;
+    background-color:#e3b93a;
+    /* background-image: url('./IMAGES/Frame.png'); */
      background-repeat: no-repeat;
     background-position: center;
      background-size: cover;  
@@ -60,7 +61,7 @@ body{
     margin-left: 7vw; */
 content: " ";
 left: 10vw;
-top: 70vh;
+top: 50vh;
 
 }
 @media (max-width: 947px) {
