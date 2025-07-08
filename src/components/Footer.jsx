@@ -1,0 +1,11 @@
+import React from "react";
+
+export default function Footer() {
+  return (
+    <footer className="h-28 w-full py-3 px-5 bg-theme flex items-center justify-center">
+      <p className="text-theme-light font-medium">
+        © Copyright 2022. All right reserved!
+      </p>
+    </footer>
+  );
+}

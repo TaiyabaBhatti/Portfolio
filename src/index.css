@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+@theme {
+  --color-theme: #555879;
+  --color-theme-medium: #98a1bc;
+  --color-theme-light: #f4ebd3;
+  --color-theme-camel-light: #ded3c4;
+  --color-gray-shade: #4c585b;
+  --text-lg: 20px;
+  --text-medium: 18px;
+  --text-xsm: 10px;
+  --text-msm: 12px;
+}
+
+.card-shadow {
+  box-shadow: 1px 2px 3px 2px #ded3c4;
+}
+
+.tab-shadow {
+  box-shadow: #2c2e3f 3px 3px 6px 0px inset, #555879 -3px -3px 6px 1px inset;
+}
+
+#blog-carousel {
+  margin: 0;
+}
+
+#blog-carousel .swiper-wrapper {
+  /* align-content: flex-start !important; */
+}
+#blog-carousel .swiper-pagination {
+  /* width: fit-content !important; */
+}
+
+/* #blog-carousel .swiper-pagination-bullet {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  align-content: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  font-weight: 600;
+  opacity: 1;
+  background: var(--color-paratextColor);
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+} */
+
+#blog-carousel .swiper-pagination-bullet-active {
+  color: #fff;
+  background: #555879;
+}
+
+.project-layout {
+  background-color: red;
+}
