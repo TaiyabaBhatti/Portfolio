@@ -24,7 +24,7 @@ export default function Header() {
   };
 
   return (
-    <header className="flex h-16 items-center py-3 px-5 relative">
+    <header className="flex h-16 items-center py-3 px-5 relative overflow-hidden">
       {screenWidth > breakpoint ? (
         <nav className="space-x-2">
           <TabLink text="home" path="home" />
@@ -34,16 +34,13 @@ export default function Header() {
         </nav>
       ) : (
         <>
-          {menuActive ? (
-            <Menu setFunc={handleMenu} />
-          ) : (
-            <button
-              onClick={handleMenu}
-              className="ml-auto bg-theme p-3 rounded-full"
-            >
-              <FaBars className="text-2xl text-theme-light" />
-            </button>
-          )}
+          <Menu setFunc={handleMenu} visibility={menuActive} />
+          <button
+            onClick={handleMenu}
+            className="ml-auto bg-theme p-3 rounded-full"
+          >
+            <FaBars className="text-2xl text-theme-light" />
+          </button>
         </>
       )}
     </header>

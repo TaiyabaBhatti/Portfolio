@@ -4,6 +4,8 @@ import CardOutline from "../../components/CardOutline";
 import CardTab from "../../components/CardTab";
 import PageTag from "../../components/PageTag";
 import { aboutInfo } from "../../data/pageData";
+import SectionHeading from "../../components/SectionHeading";
+import Heading from "../../components/Heading";
 
 export default function AboutPage() {
   return (
@@ -13,9 +15,7 @@ export default function AboutPage() {
         {/* About Hero */}
         <div className="space-y-8">
           <div className="space-y-1.5">
-            <h1 className="text-center uppercase text-theme font-bold text-4xl">
-              who am i?
-            </h1>
+            <Heading text="who am i?" />
             <h6 className="text-center font-medium text-theme">
               Passinate Frontend Developer and Explorer
             </h6>
@@ -29,14 +29,16 @@ export default function AboutPage() {
         <div className="mt-10">
           <CardOutline>
             <div className="flex flex-row items-center justify-between gap-5">
-              <div className="border-r-2 pr-5">
+              <div className="h-full border-r-2 border-r-gray-400 pr-5">
                 {/* sub-Heading */}
-                <h4 className="text-lg font-semibold">Interests</h4>
+                <SectionHeading text="Interests" />
               </div>
-              <div className="flex flex-row gap-x-1.5">
-                <CardTab text="Cloud" />
-                <CardTab text="Sports" />
-                <CardTab text="Speaking" />
+              <div className="flex flex-row flex-wrap gap-1.5 ">
+                {aboutInfo.interests.map((item, index) => {
+                  return (
+                    <CardTab key={index} text={item} properties="text-sm" />
+                  );
+                })}
               </div>
             </div>
           </CardOutline>
@@ -51,14 +53,15 @@ export default function AboutPage() {
             "
             >
               <div>
-                <h1 className="text-lg font-semibold">Freelancer</h1>
+                <SectionHeading text="Freelancer" />
+
                 <p className="text-sm">React Developer</p>
               </div>
 
               <CardTab text="2024-now" />
             </div>
             <hr className="text-gray-400 border-[1px] my-6" />
-            <ul className="list-disc m-0 list-inside text-sm">
+            <ul className="list-disc m-0 list-outside text-sm pl-4">
               <li>Developed a versitile Skill set.</li>
               <li>Worked on real world projects.</li>
               <li>Collaborated with clients and build with peers.</li>
@@ -67,14 +70,15 @@ export default function AboutPage() {
           </CardOutline>
         </div>
 
+        {/* Education */}
         <div className="my-10">
           <CardOutline>
             <div
-              className="flex flex-row items-center justify-between
+              className="flex flex-row items-start  justify-between
             "
             >
               <div>
-                <h1 className="text-lg font-semibold mb-2">Undergraduate</h1>
+                <SectionHeading text="Undergraduate" properties="mb-2" />
                 <p className="text-sm">Software Engineer</p>
                 <p className="text-sm">MUET, Jamshoro</p>
               </div>

@@ -5,12 +5,13 @@ import { MdEmail } from "react-icons/md";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { IoIosSchool } from "react-icons/io";
 import SocialHandles from "../components/SocialHandles";
-import CardTab from "../components/CardTab";
 import CardOutline from "../components/CardOutline";
+import ContactBox from "../components/ContactBox";
+import { contactInfo } from "../data/pageData";
 
 export default function Contact() {
   return (
-    <section className="min-h-[calc(100vh-64px)] relative mt-10">
+    <section className="min-h-[calc(100vh-64px)] relative my-10">
       <PageTag text="Contact Details" />
 
       <Wrapper properties="mt-16">
@@ -18,31 +19,21 @@ export default function Contact() {
           <CardOutline>
             {/* contact info */}
             <div className="space-y-3">
-              <div className="flex flex-row items-center justify-between gap-5">
-                <div className="border-r-2 pr-5 flex flex-row items-center gap-x-1.5">
-                  {/* sub-Heading */}
-                  <MdEmail className="text-2xl text-gray-900" />
-                </div>
-                <CardTab text="taiyababhattii@gmail.com" properties="w-full" />
-              </div>
-
-              <div className="flex flex-row items-center justify-between gap-5">
-                <div className="border-r-2 pr-5 flex flex-row items-center gap-x-1.5">
-                  {/* sub-Heading */}
-                  <IoIosSchool className="text-2xl text-gray-900" />
-                </div>
-                <CardTab
-                  text="22sw051@students.muet.edu.pk"
-                  properties="w-full"
-                />
-              </div>
-              <div className="flex flex-row items-center justify-between gap-5">
-                <div className="border-r-2 pr-5 flex flex-row items-center gap-x-1.5">
-                  {/* sub-Heading */}
-                  <FaPhoneVolume className="text-2xl text-gray-900" />
-                </div>
-                <CardTab text="+92 3072360542" properties="w-full" />
-              </div>
+              <ContactBox
+                heading="Personal Email"
+                Icon={MdEmail}
+                information={contactInfo.personalEmail}
+              />
+              <ContactBox
+                heading="Student Email"
+                Icon={IoIosSchool}
+                information={contactInfo.studentEmail}
+              />
+              <ContactBox
+                heading="Phone No"
+                Icon={FaPhoneVolume}
+                information={contactInfo.phoneNumber}
+              />
             </div>
 
             <div className="mt-10 space-y-4">

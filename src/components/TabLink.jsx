@@ -6,7 +6,9 @@ export default function TabLink({ text, path, hamburger = false }) {
     <Link
       to={path}
       className={`uppercase ${
-        hamburger ? "text-theme-light font-semibold text-2xl" : "text-black"
+        hamburger
+          ? "text-theme-light font-semibold text-2xl max-mobile-sm:text-lg"
+          : "text-black"
       }`}
     >
       {text}

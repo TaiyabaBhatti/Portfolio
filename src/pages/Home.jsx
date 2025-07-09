@@ -15,10 +15,12 @@ export default function Home() {
         <section className="space-y-8">
           {/* Bio */}
           <div className="space-y-1">
-            <h1 className="text-3xl font-bold text-gray-900">
+            <h1 className="text-3xl max-mobile-sm:text-2xl font-bold text-gray-900">
               I'm <span className="">Tayyaba Bhatti</span>
             </h1>
-            <h3 className="font-medium text-theme">React JS Developer</h3>
+            <h3 className="font-medium max-mobile-sm:text-sm text-theme">
+              React JS Developer
+            </h3>
           </div>
           {/* Socials */}
           <SocialHandles />

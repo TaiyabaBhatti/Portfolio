@@ -2,9 +2,13 @@ import React from "react";
 import { IoClose } from "react-icons/io5";
 import TabLink from "./TabLink";
 
-export default function Menu({ setFunc }) {
+export default function Menu({ setFunc, visibility }) {
   return (
-    <div className="bg-theme w-96 fixed top-0 right-0 h-screen p-6 z-50">
+    <div
+      className={`bg-theme w-[calc(100vw-60px)] fixed top-0 right-0 h-screen p-6 z-50 transition duration-300 ease-in-out ${
+        visibility ? "translate-x-0" : "translate-x-full"
+      }`}
+    >
       <div className="h-full space-y-16">
         <div className="ml-auto w-fit">
           <button onClick={setFunc}>

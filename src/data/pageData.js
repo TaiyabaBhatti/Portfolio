@@ -36,11 +36,20 @@ const projects = [
 
 const aboutInfo = {
 
-    aboutDesc: "I utilize the new updates and versions of ReactJs and its dependencies, implements the new plugins that makes Frontend more reliable as I learn."
+    aboutDesc: "I utilize the new updates and versions of ReactJs and its dependencies, implements the new plugins that makes Frontend more reliable as I learn.",
+
+    interests: ["Cloud", "Sports", "Speaking"]
+
+}
+
+const contactInfo = {
+    personalEmail: "taiyababhattii@gmail.com",
+    studentEmail: "22sw051@students.muet.edu.pk",
+    phoneNumber: "+92 3072360542"
 }
 
 
 
 
 
-export { projects, aboutInfo };
+export { projects, aboutInfo, contactInfo };

@@ -5,6 +5,8 @@
 }
 
 @theme {
+  --breakpoint-mobile-sm: 330px;
+  --breakpoint-mobile-medium: 395px;
   --color-theme: #555879;
   --color-theme-medium: #98a1bc;
   --color-theme-light: #f4ebd3;
