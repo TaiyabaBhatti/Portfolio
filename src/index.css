@@ -12,6 +12,12 @@
   --color-theme-light: #f4ebd3;
   --color-theme-camel-light: #ded3c4;
   --color-gray-shade: #4c585b;
+
+  /* New Colors */
+
+  --color-theme-blue-light: #215d82;
+  --color-theme-blue-dark: #012137;
+
   --text-lg: 20px;
   --text-medium: 18px;
   --text-xsm: 10px;
@@ -62,4 +68,13 @@
 
 .project-layout {
   background-color: red;
+}
+
+.round-1 {
+  -webkit-box-shadow: inset -1.5px 1.5px 12.5px -4.5px #d1cbcb;
+  -moz-box-shadow: inset -1.5px 1.5px 12.5px -4.5px #d1cbcb;
+  box-shadow: inset -1.5px 1.5px 12.5px -4.5px #d1cbcb;
+}
+
+.round-2 {
 }
