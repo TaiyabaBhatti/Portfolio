@@ -25,11 +25,11 @@
 }
 
 .card-shadow {
-  box-shadow: 1px 2px 3px 2px #ded3c4;
+  box-shadow: 1px 2px 3px 2px #e3e7e7;
 }
 
 .tab-shadow {
-  box-shadow: #2c2e3f 3px 3px 6px 0px inset, #555879 -3px -3px 6px 1px inset;
+  box-shadow: #215d82 3px 3px 6px 0px inset, #012137 -3px -3px 6px 1px inset;
 }
 
 #blog-carousel {
@@ -77,4 +77,27 @@
 }
 
 .round-2 {
+}
+
+#home-slider .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+.home-slider::before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: #012137;
+  background: linear-gradient(
+    90deg,
+    rgba(1, 33, 55, 1) 0%,
+    rgba(255, 255, 255, 0) 11%,
+    rgba(255, 255, 255, 0) 37%,
+    rgba(255, 255, 255, 0) 89%,
+    rgba(1, 33, 55, 1) 100%
+  );
 }

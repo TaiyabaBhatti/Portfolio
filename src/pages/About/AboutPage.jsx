@@ -6,27 +6,40 @@ import PageTag from "../../components/PageTag";
 import { aboutInfo } from "../../data/pageData";
 import SectionHeading from "../../components/SectionHeading";
 import Heading from "../../components/Heading";
+import AboutBg from "../../assets/images/about-bg.jpeg";
+import TextShadow from "../../components/TextShadow";
 
 export default function AboutPage() {
   return (
-    <section className="min-h-[calc(100vh-64px)] relative mt-10">
+    <section className="relative mt-10 overflow-hidden">
       <PageTag text="About Me" />
-      <Wrapper properties="mt-16">
-        {/* About Hero */}
-        <div className="space-y-8">
-          <div className="space-y-1.5">
-            <Heading text="who am i?" />
-            <h6 className="text-center font-medium text-theme">
-              Passinate Frontend Developer and Explorer
-            </h6>
-          </div>
-          <CardOutline>
-            <p className="">{aboutInfo.aboutDesc}</p>
-          </CardOutline>
+      <div className="fixed top-[calc(100vh-200px)]">
+        <h1
+          className=" text-[100px] font-extrabold
+         text-white filter drop-shadow-md drop-shadow-theme-blue-dark-500/40 uppercase"
+        >
+          Developer
+        </h1>
+      </div>
+
+      <Wrapper properties="mt-16 relative z-40">
+        {/* About Info */}
+        <div className="space-y-1.5 mb-10">
+          {/* About Hero Heading */}
+          <Heading text="who am i?" />
+
+          {/* ABout Hero Headline */}
+          <h6 className="text-center font-medium text-theme-blue-light">
+            Passinate Frontend Developer and Explorer
+          </h6>
         </div>
 
-        {/* About Interest */}
-        <div className="mt-10">
+        <div className="space-y-8 pb-10">
+          <CardOutline delay="300">
+            <p className="">{aboutInfo.aboutDesc}</p>
+          </CardOutline>
+          {/* Interest */}
+
           <CardOutline>
             <div className="flex flex-row items-center justify-between gap-5">
               <div className="h-full border-r-2 border-r-gray-400 pr-5">
@@ -36,17 +49,15 @@ export default function AboutPage() {
               <div className="flex flex-row flex-wrap gap-1.5 ">
                 {aboutInfo.interests.map((item, index) => {
                   return (
-                    <CardTab key={index} text={item} properties="text-sm" />
+                    <CardTab key={index} text={item} properties="!text-xsm" />
                   );
                 })}
               </div>
             </div>
           </CardOutline>
-        </div>
 
-        {/* Freelencer */}
+          {/* Freelencer */}
 
-        <div className="mt-10 mb-10">
           <CardOutline>
             <div
               className="flex flex-row items-center justify-between
@@ -68,10 +79,9 @@ export default function AboutPage() {
               <li>Adapted unique challenges and requirements.</li>
             </ul>
           </CardOutline>
-        </div>
 
-        {/* Education */}
-        <div className="my-10">
+          {/* Education */}
+
           <CardOutline>
             <div
               className="flex flex-row items-start  justify-between

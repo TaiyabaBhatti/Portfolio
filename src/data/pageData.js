@@ -1,3 +1,12 @@
+import tailwindcssLogo from "../assets/images/tailwind-icon.png"
+import ReactIcon from "../assets/images/react-icon.png";
+import ViteIcon from "../assets/images/vite-icon.png";
+import FirebaseIcon from "../assets/images/firebase-icon.png";
+
+
+
+
+
 const projects = [
 
     {
@@ -48,8 +57,13 @@ const contactInfo = {
     phoneNumber: "+92 3072360542"
 }
 
+const homeSliderIcons = [
+
+    tailwindcssLogo, ReactIcon, ViteIcon, FirebaseIcon, tailwindcssLogo, ReactIcon, ViteIcon, FirebaseIcon,
+]
 
 
 
 
-export { projects, aboutInfo, contactInfo };
+
+export { projects, aboutInfo, contactInfo, homeSliderIcons };

@@ -1,7 +1,5 @@
 import React from "react";
 import { FaLinkedinIn } from "react-icons/fa6";
-import { FaTwitter } from "react-icons/fa";
-import { FaFacebookSquare } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
 export default function SocialHandles({ properties }) {
@@ -14,12 +12,6 @@ export default function SocialHandles({ properties }) {
       </a>
       <a href="https://github.com/TaiyabaBhatti ">
         <FaGithub className="text-2xl" />
-      </a>
-      <a href="">
-        <FaTwitter className="text-2xl" />
-      </a>
-      <a href="">
-        <FaFacebookSquare className="text-2xl" />
       </a>
     </div>
   );
