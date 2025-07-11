@@ -12,10 +12,15 @@ export default function Home() {
       {/* Text Shadow Flow */}
 
       <div
-        className="transform  origin-right -rotate-90 top-0
+        className="transform  origin-right -rotate-90 -top-14 max-mobile-sm:top-0
         absolute  right-10"
       >
-        <TextShadow text="developer" />
+        <h1
+          className=" text-[75px] max-mobile-sm:text-[60px] font-extrabold
+         text-theme-blue-dark filter drop-shadow-lg drop-shadow-cyan-500/10 uppercase"
+        >
+          developer
+        </h1>
       </div>
 
       {/* <h1
@@ -32,10 +37,10 @@ export default function Home() {
           {/* Bio */}
           <div className="space-y-8">
             <div className="space-y-1">
-              <h1 className="text-3xl max-mobile-sm:text-2xl font-bold text-theme-camel-light">
+              <h1 className="text-3xl max-mobile-sm:text-lg font-bold text-theme-camel-light">
                 I'm <span className="">Tayyaba Bhatti</span>
               </h1>
-              <h3 className="font-medium max-mobile-sm:text-sm text-theme-camel-light">
+              <h3 className="font-medium max-mobile-sm:text-msm text-theme-camel-light">
                 React JS Developer
               </h3>
             </div>

@@ -12,11 +12,22 @@ import { contactInfo } from "../data/pageData";
 export default function Contact() {
   return (
     <section className="min-h-[calc(100vh-64px)] relative my-10">
-      <PageTag text="Contact Details" />
+      <PageTag text="Contact" />
 
       <Wrapper properties="mt-16">
         <div className="mt-10">
-          <CardOutline>
+          <CardOutline properties="space-y-14" delay="400">
+            {/* Heading */}
+
+            <div className="relative w-full p-5 bg-theme-blue-dark rounded-2xl text-center text-lg max-mobile-sm:text-base text-theme-camel-light">
+              <h5 className="">Get in touch with us!</h5>
+              <h5 className="font-medium ">Let's talk!</h5>
+              {/* Box style */}
+              <div className="style-dot left-3 top-3"></div>
+              <div className="style-dot top-3 right-3"></div>
+              <div className="style-dot bottom-3 left-3"></div>
+              <div className="style-dot bottom-3 right-3"></div>{" "}
+            </div>
             {/* contact info */}
             <div className="space-y-3">
               <ContactBox
@@ -36,8 +47,8 @@ export default function Contact() {
               />
             </div>
 
-            <div className="mt-10 space-y-4">
-              <h4 className="font-medium text-gray-900">Let's connect here!</h4>
+            {/* Social HAndles */}
+            <div className="flex justify-end">
               <SocialHandles properties="text-gray-900" />
             </div>
           </CardOutline>

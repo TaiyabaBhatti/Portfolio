@@ -36,7 +36,7 @@ export default function HomeSlider() {
       >
         {homeSliderIcons.map((icon, index) => {
           return (
-            <SwiperSlide key={index} className="!w-14">
+            <SwiperSlide key={index} className="!w-14 !max-mobile-sm:w-10">
               <img
                 src={icon}
                 alt=""

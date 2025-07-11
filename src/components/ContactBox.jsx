@@ -14,22 +14,18 @@ export default function ContactBox({ heading, Icon, information }) {
   };
 
   return (
-    <div className="flex flex-row items-center justify-between gap-x-5 gap-y-2 max-mobile-medium:flex-col max-mobile-medium:items-start max-mobile-medium:mb-8">
-      <div className="border-r-2 max-mobile-medium:border-r-0 pr-5 flex flex-row items-center gap-x-1.5 max-mobile-medium:text-gray-900">
-        {/* sub-Heading */}
-        <h6 className="text-sm font-medium max-mobile-medium:block hidden">
-          {heading}
-        </h6>
+    <div className="flex flex-row items-center justify-between gap-x-5 gap-y-2  ">
+      <div className=" bg-theme-blue-dark p-3 max-mobile-sm:p-2 rounded-full ">
         {/* Icon */}
-        <Icon className="text-2xl  max-mobile-medium:text-lg" />
+        <Icon className="text-lg max-mobile-sm:text-sm  text-theme-camel-light  " />
       </div>
 
       {/* Info */}
       <button
-        className="w-full text-start"
+        className="w-full text-start text-sm"
         onClick={() => copyToClipBoard(information)}
       >
-        <CardTab text={information} properties="w-full" />
+        {information}
       </button>
     </div>
   );

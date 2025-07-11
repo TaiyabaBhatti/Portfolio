@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import TabLink from "./TabLink";
 import Menu from "./Menu";
 import { FaBars } from "react-icons/fa6";
-import logo from "../assets/images/main-logo.png";
+import Profilelogo from "../assets/images/profile.png";
 
 export default function Header() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -27,15 +27,18 @@ export default function Header() {
   return (
     <header className="flex  items-center py-5 px-5 relative overflow-hidden bg-theme-blue-dark">
       <div className="flex flex-row items-center gap-x-3">
-        {/* <img src={logo} alt="" className="h-12 w-fit" /> */}
-        {/* <h1
-          className=" text-5xl font-extrabold
-        
+        <img
+          src={Profilelogo}
+          alt="Profile logo"
+          className="h-12 w-12 max-mobile-sm:h-7 max-mobile-sm:w-7 object-cover rounded-full"
+        />
+        <h1
+          className="text-base max-mobile-sm:text-xsm font-medium
         z-20
-        text-theme-blue-dark filter drop-shadow-sm drop-shadow-cyan-500/100"
+        text-theme-camel-light"
         >
-          TB
-        </h1> */}
+          Tayyaba Bhatti
+        </h1>
       </div>
       {screenWidth > breakpoint ? (
         <nav className="space-x-2">
